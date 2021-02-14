@@ -1,3 +1,3 @@
 # WorkSpaceSGE
 
-.WorkSpace de Sistemas de Gestión Empresarial
+ WorkSpace de Sistemas de Gestión Empresarial
