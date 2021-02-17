@@ -30,7 +30,7 @@ print ("Conectado!\n")
 cur.execute("DROP TABLE IF EXISTS prueba")
 print("La tabla prueba se ha eliminado")
 #Se crea una tabla nueva llamada prueba con un campo que será clave primaria
-cur.execute("CREATE TABLE prueba (id serial PRIMARY KEY, nombre varchar, sueldo integer)")
+cur.execute("CREATE TABLE prueba(id serial, nombre text, sueldo int);")
 #Se insertan algunas tuplas en la tabla. La última se inserta de otra forma
 cur.execute("INSERT INTO prueba (nombre, sueldo) VALUES (%s, %s)",("Miguel Sánchez", 1500))
 cur.execute("INSERT INTO prueba (nombre, sueldo) VALUES (%s, %s)",("Clara Muñoz", 1600))
