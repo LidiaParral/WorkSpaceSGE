@@ -1,0 +1,23 @@
+1.Ejecutar comando SQL Shell
+2.Confirmar: Server, Database, Port, Username, Password
+
+3. Crear la tabla
+CREATE TABLE prueba(id serial, nombre text, sueldo int);
+
+*\d prueba(NOM_TABLA)--Puedes consultar la estrctura de la tabla(descripción)
+
+4.Insertar los valores
+INSERT INTO prueba (nombre, sueldo) VALUES ('Miguel Sánchez', 1500);
+INSERT INTO prueba (nombre, sueldo) VALUES ('Clara Muñoz', 1600);
+INSERT INTO prueba (nombre, sueldo) VALUES ('Paco López', 1580);
+INSERT INTO prueba (nombre, sueldo) VALUES ('Nerea Montalbán', 1570);
+INSERT INTO prueba (nombre, sueldo) VALUES ('Luis Bermúdez', 1650);
+
+5.Consultar los datos de la tabla
+select * from prueba;
+
+
+6.Comprobar en pgAdmin4 que se ha creado la tabla con los datos recien insertados.
+
+7.Modificar los valores
+UPDATE prueba SET sueldo = 1480 WHERE nombre = 'Luis Bermúdez';
