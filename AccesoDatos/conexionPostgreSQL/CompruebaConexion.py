@@ -10,6 +10,7 @@ conn = psycopg2.connect(host = "localhost", database = "postgres1", user = "post
 print("conexión existosa")
 
 
+
 #El vehículo que se usa para interactuar con la BBDD
 cursor = conn.cursor()
 
