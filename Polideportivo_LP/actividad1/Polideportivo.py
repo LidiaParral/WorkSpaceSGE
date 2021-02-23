@@ -121,9 +121,10 @@ try:
             cur.execute(query, (vdni,))
             fila = cur.fetchone()
             vcli = fila[0]
+            vdepto = fila[0]
             cur = conx.cursor()
-            sql = """DELETE FROM SE_MATRICULAN WHERE CLIENTE = %s"""
-            cur.execute(sql,(vcli,))
+            sql = """DELETE FROM SE_MATRICULAN WHERE CLIENTE = %s AND DEPORTE = %s"""
+            cur.execute(sql,(vcli, vdept))
             conx.commit()            
             print("Se ha dado de baja la  matricula del deporte")
             
