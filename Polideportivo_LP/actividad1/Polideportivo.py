@@ -77,7 +77,7 @@ try:
             
         if num == 2:    
             vdni = input("DNI:")
-            if vdni != None:
+            if vdni is not None:
                 query = "DELETE FROM CLIENTES WHERE DNI= %s"
                 cur.execute(query, (vdni,))
                 print("El cliente con dni ", vdni, " ha sido dado de baja")
