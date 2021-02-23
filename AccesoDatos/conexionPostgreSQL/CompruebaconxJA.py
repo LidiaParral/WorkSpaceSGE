@@ -19,7 +19,7 @@ print("Conexión a la Base de Datos Postgres")
 #Se usa try para poder capturar las excepciones producidas durante la conexión
 try:
 # Se realiza la conexión con la base de datos postgres
-    conx = psycopg2.connect("database = ejercicio1, user = postgres, password = 10061995")
+    conx = psycopg2.connect("database =bd1 , user = postgres, password = 10061995")
     print("Estableciendo conexión a la base de datos ...")
     #conx.cursor devuelve un objeto cursor necesario para realizar las consultas SQL
     cur = conx.cursor()
