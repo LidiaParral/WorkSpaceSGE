@@ -17,7 +17,7 @@ print()
 conx = None
 print("Conexión a la Base de Datos Postgres")
 try:
-    conx = psycopg2.connect("dbname=bd1 user=postgres password=10061995")
+    conx = psycopg2.connect("dbname=bd2 user=postgres password=10061995")
     print("Estableciendo conexión a la base de datos ...")
     cur = conx.cursor()
     print ("Conectado!\n")
